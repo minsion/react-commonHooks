@@ -1,0 +1,12 @@
+version: '3.8'  # docker-compose的版本
+services:
+  node:
+    build:
+      context: .  # 使用上下文为当前
+      dockerfile: DockerFile 
+    volumes:
+      - ./:/www/web  # 把本地目录挂载到虚拟机的/www/web/下
+    command: sh -c "cd /www/web && npm install && npm start"  # 开发调试用npm start，部署改为npm run build
+    ports:
+      - "13001:3000"  # 端口映射自定义，13001是宿主机端口，3000是Vue、react的端口
+    stdin_open: true  # 启用输入
