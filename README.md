@@ -1,18 +1,15 @@
 
-In the project directory
-## install
+## install and start
 ```
 yarn install
-```
-you can run:
-```
 yarn start
 ```
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In the project directory,Runs the app in the development mode Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+![image](./public/filterTable.png)
 
 
-# useFilterHooks
+## useFilterHooks
 useFilterHooks is hooks function，written in react
 
 ## main api
@@ -109,5 +106,4 @@ export default DataTable
 
 ```
 
-![image](./public/filterTable.png)
 

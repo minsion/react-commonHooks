@@ -28,8 +28,13 @@ import useFilterableData from '../hooks/useFilterableData'
     width: '98%',
   };
 
-function DataTable({ data }) {
-  const { filteredData, filterText, handleFilterChange } = useFilterableData(data);
+function DataTable() {
+  const userData = [
+    { id: '1', name: 'John Doe', age: 30, email: 'john@example.com' },
+    { id: '2', name: 'Jane Doe', age: 25, email: 'jane@example.com' },
+    { id: '3', name: 'Bob Smith', age: 35, email: 'bob@example.com' },
+  ];
+  const { filteredData, filterText, handleFilterChange } = useFilterableData(userData);
   return (
     <div>
       <input 
@@ -42,7 +47,7 @@ function DataTable({ data }) {
       <table style={tableStyle}>
         <thead>
           <tr key={111}>
-            {Object.keys(data[0]).map((key) => (
+            {Object.keys(userData[0]).map((key) => (
               <th style={thStyle} key={key}>
                 {key} 
               </th>
