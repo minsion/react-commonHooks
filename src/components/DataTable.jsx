@@ -1,6 +1,4 @@
 import useFilterableData from '../hooks/useFilterableData'
-
-import {useState, useEffect} from 'react'
   const tableStyle = {
     borderCollapse: 'collapse',
     width: '100%',
@@ -30,7 +28,6 @@ import {useState, useEffect} from 'react'
     width: '98%',
   };
 
-// 请修改  DataTable 来实现功能
 function DataTable({ data }) {
   const { filteredData, filterText, handleFilterChange } = useFilterableData(data);
   return (
