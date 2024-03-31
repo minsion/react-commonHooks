@@ -64,8 +64,13 @@ function DataTable() {
             {Object.keys(userData[0]).map((key) => (
               <th style={thStyle} key={key} >
                 {key}
-                <span onClick={() => sortedDataByKey(key, 'asc')}>⬆</span>
-                <span onClick={() => sortedDataByKey(key, 'desc')}>⬇</span>
+                {
+                  (key === 'id' || key === 'age') && 
+                  <>
+                    <span onClick={() => sortedDataByKey(key, 'asc')}>⬆</span>
+                    <span onClick={() => sortedDataByKey(key, 'desc')}>⬇</span>
+                  </>
+                }
               </th>
             ))}
           </tr>

@@ -5,7 +5,7 @@ function App() {
   
   return (
       <div style={{width: "600px", margin: "20px"}}>
-        <h1>table filter hooks</h1>
+        <h1>table filter and sort hooks</h1>
         <DataTable />
       </div>
   );
