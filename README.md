@@ -14,12 +14,12 @@ Runs the app in the development mode Open [http://localhost:3000](http://localho
 ```
 import React, { useState } from 'react';
  
-// custome hooks for filtering data
+// custome hooks, filter data
 function useFilterableData(initialData) {
   const [filterText, setFilterText] = useState('');
   const [filteredData, setFilteredData] = useState(initialData);
  
-  // when filter text change, update filtered data
+  // update data when filter text changes
   const handleFilterChange = (event) => {
     const filterText = event.target.value;
     const filteredItems = initialData.filter((item) =>item.name.toLowerCase().includes(filterText.toLowerCase()))

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-// common hooks for filtering data
+// common hooks, filter data
 function useFilterableData(initialData) {
   const [filterText, setFilterText] = useState('');
   const [filteredData, setFilteredData] = useState(initialData);
  
-  // when filter text change, update filtered data
+  // update data when filter text changes
   const handleFilterChange = (event) => {
     const filterText = event.target.value;
     const filteredItems = initialData.filter((item) =>item.name.toLowerCase().includes(filterText.toLowerCase()))
