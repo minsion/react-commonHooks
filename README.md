@@ -30,9 +30,9 @@ function useFilter(initialData) {
 
 export default useFilter
 ```
-## 2.useSor api
+## 2.useSort api
 
-<img src="./public/filterTable.png" width="50%">
+<img src="./public/useSort.png" width="50%">
 
 ```
 import { useState } from 'react';
