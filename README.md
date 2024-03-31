@@ -34,6 +34,7 @@ export default useFilterableData
 ## 1.useSortableData api
 
 <img src="./public/filterTable.png" width="50%">
+
 ```
 import { useState } from 'react';
 // custome hooks, sort data
