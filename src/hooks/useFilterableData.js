@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// common hooks, filter data
+// custome hooks, filter data
 function useFilterableData(initialData) {
   const [filterText, setFilterText] = useState('');
   const [filteredData, setFilteredData] = useState(initialData);
