@@ -9,7 +9,7 @@ In the project directory,Runs the app in the development mode Open [http://local
 
 ## 1.useFilterableData api
 
-<img src="./public/filterTable.png" width="50%" height="50">
+<img src="./public/filterTable.png" width="50%">
 
 ```
 import React, { useState } from 'react';
