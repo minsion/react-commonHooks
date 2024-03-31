@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // custome hooks, filter data
-function useFilterableData(initialData) {
+function useFilter(initialData) {
   const [filterText, setFilterText] = useState('');
   const [filteredData, setFilteredData] = useState(initialData);
  
@@ -14,4 +14,4 @@ function useFilterableData(initialData) {
   return { filterText, filteredData, handleFilterChange };
 }
 
-export default useFilterableData
+export default useFilter

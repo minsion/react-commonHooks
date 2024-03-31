@@ -1,5 +1,5 @@
-import useFilterableData from '../hooks/useFilterableData'
-import useSortableData from '../hooks/useSortableData'
+import useFilter from '../hooks/useFilter'
+import useSort from '../hooks/useSort'
 import { useEffect, useState } from 'react';
 
 const tableStyle = {
@@ -37,8 +37,8 @@ function DataTable() {
     { id: '1', name: 'John Doe', age: 30, email: 'john@example.com' },
     { id: '3', name: 'Bob Smith', age: 35, email: 'bob@example.com' },
   ];
-  const {filteredData, filterText, handleFilterChange} = useFilterableData(userData);
-  const {sortData, sortedDataByKey} = useSortableData(userData);
+  const {filteredData, filterText, handleFilterChange} = useFilter(userData);
+  const {sortData, sortedDataByKey} = useSort(userData);
   const [data, setData] = useState(userData)
 
   useEffect(() => {
