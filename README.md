@@ -2,15 +2,13 @@
 ## install and start
 ```
 yarn install
+
 yarn start
 ```
 In the project directory,Runs the app in the development mode Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ![image](./public/filterTable.png)
 
-
-## useFilterHooks
-useFilterHooks is hooks function，written in react
 
 ## main api
 ```
@@ -34,7 +32,7 @@ function useFilterableData(initialData) {
 export default useFilterableData
 ```
 
-## Use in fre and react
+## use useFilterHooks in react
 ```
 import useFilterableData from '../hooks/useFilterableData'
   const tableStyle = {
