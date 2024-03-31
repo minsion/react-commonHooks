@@ -5,7 +5,7 @@ yarn install
 
 yarn start
 ```
-In the project directory,Runs the app in the development mode Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in the development mode Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## 1.useFilterableData api
 
