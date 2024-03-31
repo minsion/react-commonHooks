@@ -7,10 +7,10 @@ yarn start
 ```
 In the project directory,Runs the app in the development mode Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-![image](./public/filterTable.png)
+## 1.useFilterableData api
 
+<img src="./public/filterTable.png" width="50%" height="50">
 
-## useFilterableData api
 ```
 import React, { useState } from 'react';
  
